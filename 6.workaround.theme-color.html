@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔧 theme color workaround</title>
+    <meta name="theme-color" content="magenta" />
+    <style>
+      html {
+        background-image: linear-gradient(magenta, magenta);
+        color: white;
+        height: 100%;
+      }
+      body {
+        background-image: linear-gradient(blue, green);
+        height: 100%;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      🔧 This page puts the wanted gradient on the body element, and a
+      single-color (same color as the theme color) gradient on the html element.
+    </p>
+    <p>
+      That gives the expected behavior: Magenta overscroll both at the top and
+      at the bottom.
+    </p>
+  </body>
+</html>

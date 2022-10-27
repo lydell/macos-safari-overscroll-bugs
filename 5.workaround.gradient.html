@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔧 gradient workaround</title>
+    <style>
+      html {
+        background-image: linear-gradient(green, blue);
+        color: white;
+        height: 100%;
+      }
+      body {
+        background-image: linear-gradient(blue, green);
+        height: 100%;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      🔧 This page puts the wanted gradient (blue at the top, green at the
+      bottom) on the body element, and the opposite on the html element.
+    </p>
+    <p>
+      That gives the expected behavior: Blue overscroll at the top and green at
+      the bottom.
+    </p>
+    <p>
+      <a href="./6.workaround.theme-color.html" style="color: inherit"
+        >Workaround 2</a
+      >
+    </p>
+  </body>
+</html>
