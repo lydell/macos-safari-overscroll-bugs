@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>❌ meta theme-color with background-image</title>
+    <meta name="theme-color" content="magenta" />
+    <style>
+      html {
+        background-image: linear-gradient(blue, green);
+        color: white;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      ❌ The overscroll is using the linear-gradient background-image of this
+      page.
+    </p>
+    <p>Expected: Magenta overscroll at the top and the bottom.</p>
+    <p>Actual: Green overscroll at the top, blue at the bottom.</p>
+  </body>
+</html>

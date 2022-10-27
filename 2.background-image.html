@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>❌ background-image</title>
+    <style>
+      html {
+        background-image: linear-gradient(blue, green);
+        color: white;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      ❌ The overscroll is opposite of the linear-gradient background-image of
+      this page!
+    </p>
+    <p>Expected: Blue overscroll at the top, green at the bottom.</p>
+    <p>Actual: Green overscroll at the top, blue at the bottom.</p>
+    <p>
+      <a
+        href="./3.meta-theme-color.background-color.html"
+        style="color: inherit"
+        >Next test</a
+      >
+    </p>
+  </body>
+</html>
