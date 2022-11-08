@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>❌ background-image</title>
+    <title>🫤 background-image</title>
     <style>
       html {
         background-image: linear-gradient(blue, green);
@@ -14,11 +14,31 @@
   </head>
   <body>
     <p>
-      ❌ The overscroll is opposite of the linear-gradient background-image of
+      🫤 The overscroll is opposite of the linear-gradient background-image of
       this page!
     </p>
     <p>Expected: Blue overscroll at the top, green at the bottom.</p>
     <p>Actual: Green overscroll at the top, blue at the bottom.</p>
+    <p>
+      Edit: A human probably expects the above intuitively, but there is an
+      explanation which makes sense once you know it. It’s all about
+      background-repeat. The default is to repeat the background, so you can
+      think of it as there being another screenful of gradient above and below
+      the page. When you overscroll up, you see the bottom of the “screen”
+      above, and when you scroll down, you see the top of the “screen” below.
+      Which is why it feels like the opposite color is used. If you turn off
+      background-repeat, the overscroll color is white.
+    </p>
+    <p>
+      <a href="./2.1.background-repeat.html" style="color: inherit"
+        >background-repeat demonstration</a
+      >
+    </p>
+    <p>
+      <a href="./2.2.no-repeat.html" style="color: inherit"
+        >no-repeat demonstration</a
+      >
+    </p>
     <p>
       <a
         href="./3.meta-theme-color.background-color.html"
